@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 3.5rem auto 5rem;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header{
+    display: flex;
+    background-color: palegoldenrod;
+    grid-area: header;
+}
+
+main{
+    background: #eee;
+    grid-area: main;
+    height: auto;
+}
+
+footer{
+    background: palegreen;
+    grid-area: footer;
+}
