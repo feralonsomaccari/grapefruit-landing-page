@@ -12,26 +12,29 @@ body {
 .wrapper {
   display: grid;
   height: 100vh;
-  grid-template-rows: 3.5rem auto 5rem;
+  grid-template-rows: auto 5rem;
   grid-template-areas:
-    "header"
     "main"
     "footer";
 }
 
-.backdrop{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(0, 0, 0, .5);
-    z-index: 8;
-    display:none;
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.5);
+  z-index: 8;
+  display: none;
 }
 
 header {
+  position: fixed;
+  width: 100%;
+  height: 3.5rem;
   display: flex;
-  background-color: palegoldenrod;
+  background-color: transparent;
   grid-area: header;
+  z-index: 6;
 }
 
 main {
@@ -54,6 +57,7 @@ footer {
   display: flex;
   align-items: center;
   height: 100%;
+  color: pink;
 }
 .main-nav__brand img {
   height: 3rem;
@@ -71,6 +75,7 @@ footer {
   padding: 0.15rem 0.8rem;
   background: rgb(25, 25, 25);
   margin: 0.2rem 0;
+  border-radius: 20%;
 }
 
 .mobile-nav {
@@ -81,15 +86,67 @@ footer {
   height: 100vh;
   background-color: #fff;
   z-index: 10;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
   transform: translateX(-70vw);
 }
 
-.mobile-nav--show{
-    transform: translateX(0vw);
+.mobile-nav--show {
+  transform: translateX(0vw);
 }
 
 .overview {
-  background-image: url("../src/background-grapefruit.jpg");
-  height: 20rem;
+    position: relative;
+    height: 90vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.overview__background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("../src/background-overview.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: contrast(.6);
+}
+.overview__title{
+    padding: 1rem 0;
+    margin:0;
+    font-size: 2.5em;
+    color:pink;
+    text-align: center;
+    text-shadow: 1px 5px 20px rgb(50, 50, 50);
+    z-index:1;
+}
+.overview__subtitle{
+    padding: 1rem 0;
+    margin:0;
+    font-size: 1em;
+    color:#eee;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 1px 5px 20px rgb(50, 50, 50);
+    z-index:1;
+}
+
+.overview__begin-btn{
+    margin-top: 5rem;
+    padding: 1rem;
+    border: 1px solid #eee;
+    background-color: pink;
+    color: rgb(25, 25, 25);
+    border-radius: 1rem;
+    z-index:1;
+    cursor: pointer;
+}
+
+.description{
+    padding: .0rem 1rem 1rem 1rem ;
+    background-color: #eee;
+}
+.decription__title{
+    font-size: 2em;
+    color: rgb(25, 25, 25);
 }
