@@ -45,6 +45,13 @@ footer {
   grid-area: footer;
 }
 
+.btn {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid grey;
+}
+
 .main-nav {
   width: 100%;
   display: flex;
@@ -62,7 +69,7 @@ footer {
   margin: 0 0 1rem 0.5rem;
 }
 .main-nav__brand span {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .main-nav__hamburger {
@@ -144,7 +151,7 @@ footer {
   border-radius: 5rem;
   z-index: 1;
   cursor: pointer;
-  box-shadow: 1px 1px 20px 1px rgb(50, 50, 50);
+  box-shadow: 0.6rem 0.6rem 1.7rem 0rem rgba(0, 0, 0, 0.49);
 }
 .overview__comunity {
   margin: 1rem 1rem 0 1rem;
@@ -152,7 +159,7 @@ footer {
   z-index: 1;
 }
 .overview__comunity a {
-  color: white;
+  color: #fff;
 }
 
 .section-title {
@@ -160,29 +167,160 @@ footer {
   color: rgb(75, 75, 75);
   text-align: center;
 }
-
-.content-section{
-    padding: 2rem;
+.section-title--white {
+  padding: 1rem;
+  color: #fff;
 }
 
-.wrapper-brands{
-    width: 100%;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+.content-section {
+  padding: 1.5rem;
 }
 
-.wrapper-brands__item{
-    margin: 1rem 1rem;
-    height: 3rem;
-    filter: grayscale(1);
-    opacity: .5;
+.content-section__separator {
+  margin: 2rem;
 }
 
+.wrapper-brands {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.wrapper-brands__item {
+  margin: 1rem 1rem;
+  height: 3rem;
+  filter: grayscale(1);
+  opacity: 0.5;
+}
 
 .description {
   background-color: #eee;
 }
 .decription__title {
+}
+
+.product {
+  padding: 3rem 1rem;
+  /* background-color: rgb(255, 234, 237); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333333;
+}
+
+.product__image {
+  height: 10rem;
+}
+.product__title {
+  margin: 1rem 0 0 0;
+  text-align: center;
+}
+.product__subtitle {
+  margin: 0;
+  font-size: 1em;
+  text-align: center;
+}
+
+.product__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.product__btn {
+  /* border: solid 2px;
+  font-weight: bold; */
+}
+
+.community {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.community__women {
+  width: 10rem;
+  height: 10rem;
+  background-image: url(../src/happy-women.png);
+  background-size: 200%;
+  background-position: 45% calc(50% + 140px);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-color: #eee;
+  box-shadow: 0.1rem 0.1rem 1rem 0rem rgba(0, 0, 0, 0.49);
+}
+
+.community__decoration {
+  height: 5rem;
+  width: 5rem;
+  align-self: flex-start;
+  position: absolute;
+  bottom: 8.2rem;
+  left: 5rem;
+}
+
+.community-brands {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.community-brands__item {
+  margin: 1rem 1rem;
+  height: 1rem;
+  opacity: 0.5;
+}
+.community__join-btn {
+  margin: 1rem 0 0 0;
+}
+
+.whytobuy {
+  background-color: #eee;
+}
+
+.whytobuy__card {
+  margin: 3rem 0;
+  height: 30rem;
+  width: 100%;
+  box-shadow: 1px 1px 8px 1px rgb(200, 200, 200);
+}
+
+.whytobuy__card__reason {
+  height: 40%;
+  background-position: 50% 50%;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  /* box-shadow: 1px 0px 8px 4px white inset; */
+  position: relative;
+  transform: scale(1) skewY(5deg);
+}
+.whytobuy__card__reason.reason1 {
+  background-image: url("../src/grapefruit-reason1.jpg");
+}
+.whytobuy__card__reason.reason2 {
+  background-image: url("../src/grapefruit-reason2.jpg");
+  transform: scale(1) skewY(-5deg);
+}
+
+.whytobuy__card__article__title {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding: 0 1rem;
+  font-size: 2em;
+}
+
+.whytobuy__card__article {
+  padding: 0 1rem;
+}
+
+.photo {
+  background-image: url("../src/women-eat-grapefruit.jpg");
+  height: 30rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
