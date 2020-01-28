@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="styles/main.css" />
     <title>GrapeFruit Landing Page</title>
   </head>
@@ -17,24 +18,25 @@
       <header>
         <nav class="main-nav">
           <a class="main-nav__brand">
-            <span>Grapefruit</span>
+            <span class="main-nav__brand-name">Grapefruit</span>
             <img src="src/brand-grapefruit.png" alt="" />
           </a>
 
-          <div class="main-nav__hamburger">
+          <!-- <div class="main-nav__hamburger">
             <div></div>
             <div></div>
             <div></div>
-          </div>
+          </div> -->
+          <a class="btn main-nav__btn" href="">Buy Now!</a>
         </nav>
       </header>
 
       <main>
-        <section class=" overview">
+        <section class="overview">
           <div class="overview__background"></div>
           <h1 class="overview__title">"Tasty, Fresh and Awesome!"</h1>
           <h2 class="overview__subtitle">We are one of the most popular fruit over the world leading the healthy food market and inovating constantly in the field</h2>
-          <a class="overview__begin-btn">BUY NOW!</a>
+          <a class="overview__begin-btn">Start now</a>
           <small class="overview__community">or <a href="">join our community</a></small>
         </section>
 
@@ -66,6 +68,17 @@
           <p>The grapefruit first appeared in the 18th century, as a side project of Orange Team. After many years of research Grapefruit finally meet the light and the success was inmediatly big</p>
             <p>What are you waiting for? Don't lose time and order one now!</p>
           </article>
+
+          <div class="description_image_container">
+
+            <img class="description__image" src="src/grapefruit-lite2.png" alt="">
+            <img class="description__arrow description__arrow--arrow1" src="src/arrow1.png" alt="">
+            <span class="description__text description__text--arrow1">Deliciousness</span>
+            <img class="description__arrow description__arrow--arrow2" src="src/arrow2.png" alt="">
+            <span class="description__text description__text--arrow2">Healthiness</span>
+            <img class="description__arrow description__arrow--arrow3" src="src/arrow3.png" alt="">
+            <span class="description__text description__text--arrow3">Awesomeness</span>
+          </div>
         </section>
 
         <section class="photo photo--woman">
@@ -90,7 +103,9 @@
             <li><b>Potassium:</b> 5%</li>
           </ul>
           <p>And much much more...</p>
-          <a class="btn product__btn">FIND MORE!</a>
+          <img class="product__image" src="src/grapefruit-pro.png" alt="">
+          <a class="btn product__btn">LEARN MORE</a>
+
         </section>
 
         <!-- <section class="photo photo--pomelo">
@@ -106,7 +121,7 @@
             <div class="plan__price plan__price--lite">
               Starting at $0.99
             </div>
-            <img class="plan_image" src="src/grapefruit-lite.png" alt="">
+            <!-- <img class="plan_image" src="src/grapefruit-lite.png" alt=""> -->
             <p class="plan__description">One small and compact grapefruit ready to be eated at the moment. Easy to trave with and full of taste!</p>
             <ul class="plan_list">
               <li>1 small grapefruits</li>
@@ -116,13 +131,13 @@
             <a class="btn plan__cartbtn plan__cartbtn--lite" href="">Buy Now!</a>
           </article>
 
-          <article class="plan__card">
+          <article class="plan__card plan__card--hightlighted">
             <h1 class="plan__title plan__title--pro">Grapefruit Pro</h1>
             <h1 class="plan__subtitle plan__subtitle--pro">When you know whats good!</h1>
             <div class="plan__price plan__price--pro">
               Starting at $3.99
             </div>
-            <img class="plan_image" src="src/grapefruit-pro.png" alt="">
+            <!-- <img class="plan_image" src="src/grapefruit-pro.png" alt=""> -->
             <p class="plan__description">A portable and pre-sliced grapefruit carefully selected from our shop. You will have warrant for life and customer support</p>
             <ul class="plan_list">
               <li>7 big grapefruits</li>
@@ -140,7 +155,7 @@
             <div class="plan__price plan__price--team">
               Starting at $9.99
             </div>
-            <img class="plan_image" src="src/grapefruit-team.png" alt="">
+            <!-- <img class="plan_image" src="src/grapefruit-team.png" alt=""> -->
             <p class="plan__description">Are you planing to buy for the entire family? Or perhaps for you company team? Then you are talking about grapefruit team.</p>
             <ul class="plan_list">
               <li>20 small grapefruits</li>
@@ -151,7 +166,6 @@
             <a class="btn plan__cartbtn plan__cartbtn--team" href="">Buy Now!</a>
           </article>
 
-
         </section>
 
 
@@ -161,7 +175,7 @@
           <p>We have a non stop growing community of fans all over the world of grapefruit</p>
           <br />
           <div class="community__women"></div>
-          <a class="btn community__join-btn">JOIN US!</a>
+          <a class="btn community__join-btn">JOIN US</a>
           <div class="community-brands">
             <img class="community-brands__item" src="src/facebook.png" alt="Facebook" srcset="" />
             <img class="community-brands__item" src="src/twitter.png" alt="Twitter" srcset="" />
@@ -169,21 +183,27 @@
             <img class="community-brands__item" src="src/mail.png" alt="email us" srcset="" />
           </div>
         </section>
+        
       </main>
 
       <footer class="footer">
-        <strong>Made with love for all grapefruit lovers</strong>
-        <ul class="footer__list">
-          <li>BLOG</li>
-          <li>FORUM</li>
-          <li>OUR TEAM</li>
-          <li>WORK WITH US</li>
-          <li>CONTACT</li>
-        </ul>
-        <strong>Copyright 2020 © <span>Grapefruit</span>. All Rights Reserved.</strong>
-        <strong>Created by Fer Alonso Maccari</strong>
+        <div class="footer-main">
+
+          <strong>Made with love for all grapefruit lovers</strong>
+          <ul class="footer__list">
+            <li>BLOG</li>
+            <li>FORUM</li>
+            <li>CONTACT</li>
+            <li>OUR TEAM</li>
+            <li>WORK WITH US</li>
+          </ul>
+        </div>
+        <div class="footer__foot">
+          <strong>Copyright 2020 © <span>Grapefruit</span>. All Rights Reserved.</strong>
+          <strong>Created by Fer Alonso Maccari</strong>
+        </div>
       </footer>
-    </div>
+    </divc>
     <script src="js/nav.js"></script>
   </body>
 </html>

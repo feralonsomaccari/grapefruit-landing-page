@@ -12,9 +12,9 @@ body {
 .wrapper {
   display: grid;
   height: 100vh;
-  grid-template-rows: 4.5rem auto auto;
+  grid-template-rows: auto auto;
   grid-template-areas:
-    "header"
+    /* "header" */
     "main"
     "footer";
 }
@@ -29,12 +29,17 @@ body {
 }
 
 header {
+  position: fixed;
+  height: 4.5rem;
   display: flex;
   background-color: #fff;
   grid-area: header;
+  width: 100%;
+  z-index: 10;
 }
 
 main {
+  margin-top: 4.5rem;
   background: #fff;
   grid-area: main;
   height: auto;
@@ -43,27 +48,30 @@ main {
 .footer {
   background: #40444f;
   grid-area: footer;
-  padding: 1rem;
   color: #9aa1a5;
- 
 }
 
-.footer__list{
+.footer-main {
+  padding: 1rem;
+}
+.footer__list {
   list-style: none;
   padding: 0;
 }
-.footer__list li{
-  margin-top: .8rem;
+.footer__list li {
+  margin-top: 0.8rem;
   font-style: "Catamaran";
-  font-size: .8em;
+  font-size: 0.8em;
   text-shadow: -0.08rem -0.1rem 0 #0d0e10;
 }
-.footer strong{
-  color:#fff;
-  font-size: .8em;
-
+.footer strong {
+  color: #fff;
+  font-size: 0.8em;
 }
 
+.footer__foot {
+  background-color: #373941;
+}
 
 .btn {
   display: inline-block;
@@ -80,6 +88,8 @@ main {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 5px 1px rgb(125, 125, 125);
 }
 .main-nav__brand {
   display: flex;
@@ -96,6 +106,10 @@ main {
   font-size: 1.5em;
 }
 
+.main-nav__brand-name {
+  /* font-family: "Dancing Script"; */
+}
+
 .main-nav__hamburger {
   display: flex;
   flex-direction: column;
@@ -109,6 +123,11 @@ main {
   background: rgb(25, 25, 25);
   margin: 0.1rem 0;
   border-radius: 10%;
+}
+.main-nav__btn {
+  background-color: #ff6146;
+  color: #fff;
+  border: none;
 }
 
 .mobile-nav {
@@ -133,6 +152,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* background: linear-gradient(rgb(235, 115, 95) 0%, rgb(255, 97, 70) 0%, rgb(255, 97, 70) 100%, rgb(255, 97, 70) 100%); */
+  clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 80%);
+  padding-bottom: 40rem;
 }
 .overview__background {
   position: absolute;
@@ -148,7 +170,7 @@ main {
   margin: 0;
   font-size: 3em;
   color: #fff;
-  text-align: center;
+  /* text-align: center; */
   text-shadow: 1px 5px 20px rgb(50, 50, 50);
   z-index: 1;
 }
@@ -158,7 +180,7 @@ main {
   font-family: "Catamaran";
   font-size: 1.5em;
   color: #eee;
-  text-align: center;
+  /* text-align: center; */
   text-shadow: 1px 5px 20px rgb(50, 50, 50);
   z-index: 1;
 }
@@ -170,20 +192,21 @@ main {
   text-align: center;
   font-family: "Archivo Narrow";
   font-size: 1.5em;
-  background-color: #fff;
-  color: rgb(25, 25, 25);
+  background-color: #ff6146;
+  color: #fff;
   border-radius: 5rem;
   z-index: 1;
   cursor: pointer;
   box-shadow: 0.6rem 0.6rem 1.7rem 0rem rgba(0, 0, 0, 0.49);
 }
-.overview__comunity {
+.overview__community {
   margin: 1rem 1rem 0 1rem;
   color: rgb(175, 175, 175);
   z-index: 1;
 }
-.overview__comunity a {
+.overview__community a {
   color: #fff;
+  text-decoration: underline;
 }
 
 .section-title {
@@ -221,8 +244,63 @@ main {
 
 .description {
   background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .decription__title {
+}
+.description_image_container {
+  margin-top: 1rem;
+  height: 30rem;
+  width: 16rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.description__image {
+  margin-top: 4rem;
+  position: absolute;
+  height: 15rem;
+  width: 16rem;
+  /* filter: brightness(0.9); */
+}
+.description__arrow {
+  position: absolute;
+  height: 5rem;
+}
+.description__arrow--arrow1 {
+  top: 55%;
+  left: 50%;
+  transform: rotateZ(75deg);
+}
+.description__arrow--arrow2 {
+  top: 40%;
+  left: 0%;
+  transform: rotateZ(75deg);
+}
+.description__arrow--arrow3 {
+  top: 10%;
+  left: 60%;
+  transform: rotateZ(-50deg);
+}
+.description__text {
+  position: absolute;
+  font-size: 1.5rem;
+  font-family: "Catamaran";
+}
+.description__text--arrow1 {
+  top: 70%;
+  left: 60%;
+}
+.description__text--arrow2 {
+  top: 60%;
+  left: 0%;
+}
+.description__text--arrow3 {
+  top: 0%;
+  left: 55%;
 }
 
 .product {
@@ -232,6 +310,7 @@ main {
   flex-direction: column;
   align-items: center;
   color: #333333;
+  background-color: #fff;
 }
 
 .product__image {
@@ -256,6 +335,9 @@ main {
   /* border: solid 2px;
   font-weight: bold; */
 }
+.product__image {
+  height: 5rem;
+}
 
 .community {
   position: relative;
@@ -263,6 +345,7 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #fff;
 }
 .community__women {
   width: 10rem;
@@ -301,45 +384,6 @@ main {
 .community__join-btn {
 }
 
-.whytobuy {
-  background-color: #eee;
-}
-
-.whytobuy__card {
-  margin: 3rem 0;
-  height: 30rem;
-  width: 100%;
-  box-shadow: 1px 1px 8px 1px rgb(200, 200, 200);
-}
-
-.whytobuy__card__reason {
-  height: 40%;
-  background-position: 50% 50%;
-  background-size: 200%;
-  background-repeat: no-repeat;
-  /* box-shadow: 1px 0px 8px 4px white inset; */
-  position: relative;
-  transform: scale(1) skewY(5deg);
-}
-.whytobuy__card__reason.reason1 {
-  background-image: url("../src/grapefruit-reason1.jpg");
-}
-.whytobuy__card__reason.reason2 {
-  background-image: url("../src/grapefruit-reason2.jpg");
-  transform: scale(1) skewY(-5deg);
-}
-
-.whytobuy__card__article__title {
-  margin-top: 2rem;
-  margin-bottom: 0;
-  padding: 0 1rem;
-  font-size: 2em;
-}
-
-.whytobuy__card__article {
-  padding: 0 1rem;
-}
-
 .photo {
   height: 30rem;
   background-repeat: no-repeat;
@@ -349,6 +393,9 @@ main {
 .photo--woman {
   background-image: url("../src/women-eat-grapefruit.jpg");
 }
+.photo--man {
+  background-image: url("../src/background-overview.jpg");
+}
 .photo--pomelo {
   background-image: url("../src/pomelo.jpg");
 }
@@ -356,94 +403,112 @@ main {
   margin: 0;
 }
 
-
-.plan{
-  background-color: #eee;
+.plan {
+  padding: 0;
+  /* background-color: #dadada; */
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.plan__card{
-  margin: 2rem 0;
-  width: 100%;
+.plan__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem 2rem;
+  max-width: 20rem;
+  min-width: 15rem;
   background-color: #fff;
   color: #333333;
   text-align: center;
   padding: 1rem 0;
+  box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.08);
+  /* transform: translateY(-1.2rem); */
 }
 
-.plan__title{
+.plan__card--hightlighted {
+  z-index: 1;
+  /* transform: translateY(1.2rem); */
+}
+
+.plan__title {
   font-size: 2em;
   padding: 1rem;
   margin: 0;
 }
-.plan__subtitle{
+.plan__subtitle {
   font-size: 1.2em;
   margin-top: 0rem;
   padding: 0rem 1rem;
 }
-.plan__price{
+.plan__price {
   padding: 1rem 0;
   /* background: pink; */
   color: #fff;
-  box-shadow: 0.1rem 0rem 1rem 0rem rgba(0, 0, 0, 0.49);
-  transform: scale(1.1);
+  /* box-shadow: 0.1rem 0rem 1rem 0rem rgba(0, 0, 0, 0.49);
+  transform: scale(1.1); */
 }
 
-.plan_image{
+.plan_image {
   padding: 1rem;
   margin-top: 1rem;
   height: 7rem;
+  flex-basis: 50%;
+  width: 50%;
+  align-self: center;
 }
-.plan__description{
+.plan__description {
   padding: 0 1rem;
 }
-.plan_list{
+.plan_list {
   width: 75%;
   padding: 1rem;
   margin: 0 auto;
   text-align: left;
 }
-.plan__cartbtn{
+.plan__cartbtn {
   margin: 1rem;
   background-color: palevioletred;
-  color:white;
+  color: white;
   border: none;
 }
 
-.plan__title--lite{
-  color:palevioletred;
+.plan__title--lite {
+  color: palevioletred;
 }
-.plan__subtitle--lite{
-  color:palevioletred;
+.plan__subtitle--lite {
+  color: palevioletred;
 }
-.plan__price--lite{
+.plan__price--lite {
   background-color: palevioletred;
 }
-.plan__cartbtn--lite{
+.plan__cartbtn--lite {
   background-color: palevioletred;
 }
 
-.plan__title--pro{
-  color:rgb(255, 97, 70);
+.plan__title--pro {
+  color: rgb(255, 97, 70);
 }
-.plan__subtitle--pro{
-  color:rgb(255, 97, 70);
+.plan__subtitle--pro {
+  color: rgb(255, 97, 70);
 }
-.plan__price--pro{
+.plan__price--pro {
   background-color: rgb(255, 97, 70);
 }
-.plan__cartbtn--pro{
+.plan__cartbtn--pro {
   background-color: rgb(255, 97, 70);
 }
 
-.plan__title--team{
-  color:darkorchid;
+.plan__title--team {
+  color: darkorchid;
 }
-.plan__subtitle--team{
-  color:darkorchid;
+.plan__subtitle--team {
+  color: darkorchid;
 }
-.plan__price--team{
+.plan__price--team {
   background-color: darkorchid;
 }
-.plan__cartbtn--team{
+.plan__cartbtn--team {
   background-color: darkorchid;
 }
