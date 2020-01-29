@@ -214,7 +214,6 @@ main {
 
 .content-section {
   padding: 1.5rem;
-  
 }
 
 .content-section__separator {
@@ -243,7 +242,7 @@ main {
   justify-content: center;
   align-items: center;
 }
-.description article{
+.description article {
   line-height: 2.6rem;
 }
 .decription__title {
@@ -300,6 +299,33 @@ main {
   left: 55%;
 }
 
+.features {
+  background-color: #ff6146;
+  color: #fff;
+  text-align: left;
+  padding: 3rem;
+}
+.features h5 {
+  color: #fff;
+  text-align: left;
+  margin-top: 0;
+}
+.features__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  line-height: 2rem;
+}
+.features__title {
+  padding: 1rem 0 0 0;
+  margin: 0;
+  color: white;
+  font-weight: bold;
+}
+.features_item {
+  width: 100%;
+}
+
 .product {
   /* padding: 3rem 1rem; */
   /* background-color: rgb(255, 234, 237); */
@@ -342,7 +368,9 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #fff;
+  background-color: #ff6146;
+  color: white;
+  line-height: 2rem;
 }
 .community__women {
   width: 10rem;
@@ -353,6 +381,7 @@ main {
   background-repeat: no-repeat;
   border-radius: 50%;
   background-color: #eee;
+  margin: 0 auto;
   /* box-shadow: 0.1rem 0.1rem 1rem 0rem rgba(0, 0, 0, 0.49); */
 }
 
@@ -498,16 +527,16 @@ main {
 }
 
 .plan__title--team {
-  color: darkorchid;
+  color: #ce95ea;
 }
 .plan__subtitle--team {
-  color: darkorchid;
+  color: #ce95ea;
 }
 .plan__price--team {
-  background-color: darkorchid;
+  background-color: #ce95ea;
 }
 .plan__cartbtn--team {
-  background-color: darkorchid;
+  background-color: #ce95ea;
 }
 
 @media (min-width: 45rem) {
@@ -530,7 +559,6 @@ main {
     justify-content: space-around;
   }
   .description article {
-    
     font-size: 1.2em;
     text-align: left;
     width: 50%;
@@ -538,17 +566,21 @@ main {
     max-width: 95rem;
   }
   .content-section {
-    padding: 1.5rem 2rem;
+    padding: 3rem 2rem;
   }
 
   .community {
-    max-width: 50rem;
-    justify-content: space-around;
-    line-height: 2.6rem;
     font-size: 1.2em;
-    margin: 1rem auto;
   }
+  .community article{
+    margin: 1rem auto;
+    max-width: 50rem;
+  }
+
   .footer {
     font-size: 1.2em;
+  }
+  .features_item {
+    width: 45%;
   }
 }
