@@ -46,31 +46,22 @@ main {
 }
 
 .footer {
-  background: #40444f;
+  background: #f1f2fa;
   grid-area: footer;
-  color: #9aa1a5;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem 2rem;
+  font-size: .8em;
 }
 
-.footer-main {
-  padding: 1rem;
+.footer__about{
+  width: 50%;
 }
-.footer__list {
+.footer__things ul{
   list-style: none;
+  width: 50%;
   padding: 0;
-}
-.footer__list li {
-  margin-top: 0.8rem;
-  font-style: "Catamaran";
-  font-size: 0.8em;
-  text-shadow: -0.08rem -0.1rem 0 #0d0e10;
-}
-.footer strong {
-  color: #fff;
-  font-size: 0.8em;
-}
-
-.footer__foot {
-  background-color: #373941;
+  color: rgba(0,0,0,.4);
 }
 
 .btn {
