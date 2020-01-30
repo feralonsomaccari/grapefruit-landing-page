@@ -47,37 +47,41 @@ main {
 
 .footer {
   grid-area: footer;
+  background-color: #111111;
+  
+}
+.footer__content{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 1rem 2rem;
   font-size: 0.8em;
-  background-color: #ff6146;
-  background-color: #111111;
+  max-width: 75rem;
+  margin: 0 auto;
 }
 
 .footer__about {
   padding: 1rem;
-  color:#fff;
+  color: #fff;
   text-align: center;
 }
-.footer__about a{
+.footer__about a {
   color: #fff;
 }
-.footer__about a:hover{
+.footer__about a:hover {
   text-decoration: none;
 }
-.footer__contact{
+.footer__contact {
   padding: 1rem;
-  color:#fff;
+  color: #fff;
   text-align: center;
 }
-.footer__contact a{
-  color:#fff;
-  padding: 0 .1rem;
+.footer__contact a {
+  color: #fff;
+  padding: 0 0.1rem;
   font-weight: bold;
 }
-.footer__contact a:hover{
+.footer__contact a:hover {
   text-decoration: none;
 }
 
@@ -154,12 +158,13 @@ main {
   transform: translateX(0vw);
 }
 
-.overview {
+.overview__content{
   position: relative;
   height: 100vh;
   /* clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 80%); */
   clip-path: circle(95% at 0% 20%);
   padding-bottom: 40rem;
+  max-height: 30rem;
 }
 .overview__background {
   position: absolute;
@@ -170,7 +175,7 @@ main {
   background-position: center;
   /* filter: contrast(0.6); */
 }
-.overview article {
+.overview__article {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -232,12 +237,10 @@ main {
   font-size: 1.5em;
 }
 
-.content-section {
+.section-content {
   padding: 1.5rem;
-}
-
-.content-section__separator {
-  margin: 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
 }
 
 .wrapper-brands {
@@ -257,17 +260,17 @@ main {
 
 .description {
   background-color: #dadada;
+}
+.description__content{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.description article {
+.description__article {
   line-height: 2.6rem;
 }
-.decription__title {
-}
-.description_image_container {
+.description__image-container {
   margin-top: 1rem;
   height: 30rem;
   width: 16rem;
@@ -321,15 +324,18 @@ main {
 
 .features {
   background-color: #ff6146;
+}
+.features__content {
   color: #fff;
   text-align: left;
   padding: 3rem;
 }
-.features h5 {
+.features__content h5 {
   color: #fff;
   text-align: left;
   margin-top: 0;
 }
+
 .features__wrapper {
   display: flex;
   justify-content: space-between;
@@ -436,6 +442,9 @@ main {
   background-size: cover;
   background-position: 50% 50%;
 }
+.photo__section{
+  padding: 0;
+}
 .photo--woman {
   background-image: url("../src/women-eat-grapefruit.jpg");
 }
@@ -450,7 +459,7 @@ main {
 }
 
 .plan {
-  padding: 0;
+  padding: 3rem 0;
   /* background-color: #dadada; */
   background-color: #dadada;
   display: flex;
@@ -560,14 +569,19 @@ main {
   background-color: #632780;
 }
 
+
 @media (min-width: 45rem) {
   .overview {
+    
+  }
+  .overview__content{
     clip-path: circle(80% at 20% 10%);
   }
-  .overview article{
+  .overview__article {
     font-size: 1.2em;
     max-width: 45rem;
     margin: 0 auto;
+    max-height: 30rem;
   }
   .clients {
     font-size: 1.2em;
@@ -584,29 +598,30 @@ main {
   .wrapper-brands__item {
     height: 4rem;
   }
-  .description {
-    justify-content: space-around;
+
+  .description__content{
+    justify-content: space-between;
   }
-  .description article {
+  .description__article {
     font-size: 1.2em;
     text-align: left;
     width: 50%;
     padding: 0 1rem;
     max-width: 95rem;
   }
-  .content-section {
+  .section-content {
     padding: 3rem 2rem;
   }
 
   .community {
     font-size: 1.2em;
   }
-  .community article{
+  .community article {
     margin: 1rem auto;
     max-width: 50rem;
   }
 
-  .footer {
+  .footer__content {
     justify-content: space-between;
   }
   .features_item {
