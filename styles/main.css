@@ -46,22 +46,39 @@ main {
 }
 
 .footer {
-  background: #f1f2fa;
   grid-area: footer;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 1rem 2rem;
   font-size: 0.8em;
+  background-color: #ff6146;
+  background-color: #111111;
 }
 
 .footer__about {
-  width: 50%;
+  padding: 1rem;
+  color:#fff;
+  text-align: center;
 }
-.footer__things ul {
-  list-style: none;
-  width: 50%;
-  padding: 0;
-  color: rgba(0, 0, 0, 0.4);
+.footer__about a{
+  color: #fff;
+}
+.footer__about a:hover{
+  text-decoration: none;
+}
+.footer__contact{
+  padding: 1rem;
+  color:#fff;
+  text-align: center;
+}
+.footer__contact a{
+  color:#fff;
+  padding: 0 .1rem;
+  font-weight: bold;
+}
+.footer__contact a:hover{
+  text-decoration: none;
 }
 
 .btn {
@@ -69,9 +86,9 @@ main {
   margin: 1rem;
   padding: 1rem;
   border-radius: 1rem;
-  border: 1px solid grey;
+  border: 1px solid #fff;
   text-decoration: none;
-  color: #333333;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -140,14 +157,15 @@ main {
 .overview {
   position: relative;
   height: 100vh;
-  clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 80%);
+  /* clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 80%); */
+  clip-path: circle(95% at 0% 20%);
   padding-bottom: 40rem;
 }
 .overview__background {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url("../src/background-overview.jpg");
+  background-image: url("../src/background-overview3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   /* filter: contrast(0.6); */
@@ -171,7 +189,7 @@ main {
   margin: 0;
   font-family: "Catamaran";
   font-size: 1.5em;
-  color: #eee;
+  color: #fff;
   /* text-align: center; */
   text-shadow: 1px 5px 20px rgb(50, 50, 50);
   z-index: 1;
@@ -179,14 +197,14 @@ main {
 
 .overview__begin-btn {
   margin-top: 1rem;
-  padding: 1rem;
+  margin-bottom: 0;
   width: 10rem;
   text-align: center;
   font-family: "Archivo Narrow";
   font-size: 1.5em;
   background-color: #ff6146;
+  border: none;
   color: #fff;
-  border-radius: 5rem;
   z-index: 1;
   cursor: pointer;
   box-shadow: 0.6rem 0.6rem 1.7rem 0rem rgba(0, 0, 0, 0.49);
@@ -210,6 +228,8 @@ main {
 .section-title--white {
   padding: 1rem;
   color: #fff;
+  border: #fff dotted;
+  font-size: 1.5em;
 }
 
 .content-section {
@@ -236,7 +256,7 @@ main {
 }
 
 .description {
-  background-color: #eee;
+  background-color: #dadada;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -380,7 +400,7 @@ main {
   background-position: 35% calc(50% + 140px);
   background-repeat: no-repeat;
   border-radius: 50%;
-  background-color: #eee;
+  background-color: #dadada;
   margin: 0 auto;
   /* box-shadow: 0.1rem 0.1rem 1rem 0rem rgba(0, 0, 0, 0.49); */
 }
@@ -432,7 +452,7 @@ main {
 .plan {
   padding: 0;
   /* background-color: #dadada; */
-  background-color: #fff;
+  background-color: #dadada;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -489,6 +509,7 @@ main {
 }
 .plan_list {
   width: 75%;
+  height: 50%;
   padding: 1rem;
   margin: 0 auto;
   text-align: left;
@@ -527,19 +548,27 @@ main {
 }
 
 .plan__title--team {
-  color: #ce95ea;
+  color: #632780;
 }
 .plan__subtitle--team {
-  color: #ce95ea;
+  color: #632780;
 }
 .plan__price--team {
-  background-color: #ce95ea;
+  background-color: #632780;
 }
 .plan__cartbtn--team {
-  background-color: #ce95ea;
+  background-color: #632780;
 }
 
 @media (min-width: 45rem) {
+  .overview {
+    clip-path: circle(80% at 20% 10%);
+  }
+  .overview article{
+    font-size: 1.2em;
+    max-width: 45rem;
+    margin: 0 auto;
+  }
   .clients {
     font-size: 1.2em;
     margin: 0 auto;
@@ -578,7 +607,7 @@ main {
   }
 
   .footer {
-    font-size: 1.2em;
+    justify-content: space-between;
   }
   .features_item {
     width: 45%;
