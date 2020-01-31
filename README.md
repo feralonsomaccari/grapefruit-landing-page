@@ -1,7 +1,7 @@
 # Grapefruit Landing Page
 
 Grapefruit is my all time favorite fruit. So why not use it to create a landing page to practice as it were a product?
-A landing page made with a mobile-first approach, pure css html no frameworks.
+A landing page made with a mobile-first approach, pure css and no frameworks.
 
 ------
 ### Why?
@@ -13,10 +13,11 @@ What I'm practicing with this:
 - Mobile first approach
 - Responsive design
 - SEO
+- BEM Naming convention
 
 ------
 # Local Setup
 
 ```sh
-Download and open index.html
+Just clone it and open index.html
 ```
