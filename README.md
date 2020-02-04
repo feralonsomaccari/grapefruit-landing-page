@@ -7,7 +7,7 @@ Live site: https://feralonsomaccari.github.io/grapefruit-landing-page/
 
 ------
 ### Why?
-In order to practice I made a landing page with out any framework.
+In order to practice I made a landing page without any framework.
 What I'm practicing with this:
 
 - CSS
@@ -21,5 +21,5 @@ What I'm practicing with this:
 # Local Setup
 
 ```sh
-Just clone it and open index.html
+Clone it and open index.html
 ```
