@@ -1,14 +1,14 @@
 # Grapefruit Landing Page
 
-Grapefruit is my all time favorite fruit. So why not use it to create a landing page to practice as it were a product?
-A landing page made with a mobile-first approach, pure css and no frameworks.
+Grapefruit is my all-time favorite fruit. So, why not use it to create a landing page for practice, treating it as if it were a product? The landing page will be designed with a mobile-first approach, using pure CSS and no frameworks.
 
 Live site: https://feralonsomaccari.github.io/grapefruit-landing-page/
 
+![site image](./src/grapefruit-demo.png)
+
 ------
 ### Why?
-In order to practice I made a landing page without any framework.
-What I'm practicing with this:
+I created this landing page as a practice project to enhance my web development skills. By building it without using any frameworks, I focused on honing the following aspects of web development:
 
 - CSS
 - HTML
