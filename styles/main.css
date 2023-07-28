@@ -41,6 +41,7 @@ main {
   grid-area: footer;
   background-color: #111111;
 }
+
 .footer__content {
   display: flex;
   justify-content: center;
@@ -50,31 +51,36 @@ main {
   max-width: 75rem;
   margin: 0 auto;
 }
+
 .footer__about {
   padding: 1rem;
   color: #fff;
   text-align: center;
 }
+
 .footer__about a {
   color: #fff;
 }
+
 .footer__about a:hover {
   text-decoration: none;
 }
+
 .footer__contact {
   padding: 1rem;
   color: #fff;
   text-align: center;
 }
+
 .footer__contact a {
   color: #fff;
   padding: 0 0.1rem;
   font-weight: bold;
 }
+
 .footer__contact a:hover {
   text-decoration: none;
 }
-
 
 .btn {
   display: inline-block;
@@ -86,17 +92,20 @@ main {
   color: #fff;
   cursor: pointer;
 }
+
 .section-title {
   font-size: 1.6em;
   color: rgb(75, 75, 75);
   text-align: center;
 }
+
 .section-title--white {
   padding: 1rem;
   color: #fff;
   border: #fff dotted;
   font-size: 1.5em;
 }
+
 .section-content {
   padding: 1.5rem;
   max-width: 75rem;
@@ -113,6 +122,7 @@ MAIN NAV
   align-items: center;
   box-shadow: 1px 1px 5px 1px rgb(125, 125, 125);
 }
+
 .main-nav__brand {
   display: flex;
   align-items: center;
@@ -120,13 +130,16 @@ MAIN NAV
   color: rgb(25, 25, 25);
   padding-left: 1rem;
 }
+
 .main-nav__brand img {
   height: 1.5rem;
   margin: 0 0 1rem 0.5rem;
 }
+
 .main-nav__brand span {
   font-size: 1.5em;
 }
+
 .main-nav__hamburger {
   display: flex;
   flex-direction: column;
@@ -135,12 +148,14 @@ MAIN NAV
   padding: 1rem 0;
   height: 100%;
 }
+
 .main-nav__hamburger > div {
   padding: 0.1rem 0.8rem;
   background: rgb(25, 25, 25);
   margin: 0.1rem 0;
   border-radius: 10%;
 }
+
 .main-nav__btn {
   background-color: #ff6146;
   color: #fff;
@@ -157,6 +172,7 @@ OVERVIEW SECTION
   padding-bottom: 40rem;
   max-height: 30rem;
 }
+
 .overview__background {
   position: absolute;
   height: 100%;
@@ -165,11 +181,13 @@ OVERVIEW SECTION
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .overview__article {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .overview__title {
   padding: 3rem 1rem 0rem 1rem;
   margin: 0;
@@ -178,6 +196,7 @@ OVERVIEW SECTION
   text-shadow: 1px 5px 20px rgb(50, 50, 50);
   z-index: 1;
 }
+
 .overview__subtitle {
   padding: 1rem 1rem 1rem 1rem;
   margin: 0;
@@ -187,6 +206,7 @@ OVERVIEW SECTION
   text-shadow: 1px 5px 20px rgb(50, 50, 50);
   z-index: 1;
 }
+
 .overview__begin-btn {
   margin-top: 1rem;
   margin-bottom: 0;
@@ -202,11 +222,13 @@ OVERVIEW SECTION
   box-shadow: 0.6rem 0.6rem 1.7rem 0rem rgba(0, 0, 0, 0.49);
   z-index: 1;
 }
+
 .overview__community {
   margin: 1rem 1rem 0 1rem;
   color: rgb(175, 175, 175);
   z-index: 1;
 }
+
 .overview__community a {
   color: #fff;
   text-decoration: underline;
@@ -222,6 +244,7 @@ clients SECTION
   justify-content: center;
   align-content: center;
 }
+
 .wrapper-brands__item {
   margin: 1rem 1rem;
   height: 3rem;
@@ -235,15 +258,18 @@ product SECTION
 .product {
   background-color: #dadada;
 }
+
 .product__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
+
 .product__article {
   line-height: 2.6rem;
 }
+
 .product__image-container {
   margin-top: 1rem;
   height: 30rem;
@@ -252,44 +278,53 @@ product SECTION
   display: flex;
   justify-content: center;
 }
+
 .product__image {
   margin-top: 4rem;
   position: absolute;
   height: 15rem;
   width: 16rem;
 }
+
 .product__arrow {
   position: absolute;
   height: 5rem;
 }
+
 .product__arrow--arrow1 {
   top: 55%;
   left: 50%;
   transform: rotateZ(75deg);
 }
+
 .product__arrow--arrow2 {
   top: 40%;
   left: 0%;
   transform: rotateZ(75deg);
 }
+
 .product__arrow--arrow3 {
   top: 10%;
   left: 60%;
   transform: rotateZ(-50deg);
 }
+
 .product__text {
   position: absolute;
   font-size: 1.5rem;
   font-family: "Catamaran";
 }
+
 .product__text--arrow1 {
   top: 70%;
   left: 60%;
 }
+
 .product__text--arrow2 {
   top: 60%;
   left: 0%;
 }
+
 .product__text--arrow3 {
   top: 0%;
   left: 55%;
@@ -301,28 +336,33 @@ FEATURES SECTION
 .features {
   background-color: #ff6146;
 }
+
 .features__content {
   color: #fff;
   text-align: left;
   padding: 3rem;
 }
+
 .features__content h5 {
   color: #fff;
   text-align: left;
   margin-top: 0;
 }
+
 .features__wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   line-height: 2rem;
 }
+
 .features__title {
   padding: 1rem 0 0 0;
   margin: 0;
   color: white;
   font-weight: bold;
 }
+
 .features_item {
   width: 100%;
 }
@@ -340,6 +380,7 @@ COMMUNITY SECTION
   color: white;
   line-height: 2rem;
 }
+
 .community__women {
   width: 10rem;
   height: 10rem;
@@ -351,6 +392,7 @@ COMMUNITY SECTION
   background-color: #dadada;
   margin: 0 auto;
 }
+
 .community__decoration {
   height: 5rem;
   width: 5rem;
@@ -359,6 +401,7 @@ COMMUNITY SECTION
   bottom: 8.2rem;
   left: 5rem;
 }
+
 .community-brands {
   width: 100%;
   display: flex;
@@ -366,12 +409,11 @@ COMMUNITY SECTION
   justify-content: center;
   align-content: center;
 }
+
 .community-brands__item {
   margin: 1rem 1rem;
   height: 1rem;
   opacity: 0.5;
-}
-.community__join-btn {
 }
 
 /*********************************************
@@ -383,18 +425,23 @@ PHOTO SECTION
   background-size: cover;
   background-position: 50% 50%;
 }
+
 .photo__section {
   padding: 0;
 }
+
 .photo--woman {
   background-image: url("../src/women-eat-grapefruit.jpg");
 }
+
 .photo--man {
   background-image: url("../src/background-overview.jpg");
 }
+
 .photo--pomelo {
   background-image: url("../src/pomelo.jpg");
 }
+
 .photo h1 {
   margin: 0;
 }
@@ -409,6 +456,7 @@ PLAN SECTION
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .plan__card {
   display: flex;
   flex-direction: column;
@@ -422,23 +470,28 @@ PLAN SECTION
   padding: 1rem 0;
   box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.08);
 }
+
 .plan__card--hightlighted {
   z-index: 1;
 }
+
 .plan__title {
   font-size: 2em;
   padding: 1rem;
   margin: 0;
 }
+
 .plan__subtitle {
   font-size: 1.2em;
   margin-top: 0rem;
   padding: 0rem 1rem;
 }
+
 .plan__price {
   padding: 1rem 0;
   color: #fff;
 }
+
 .plan_image {
   padding: 1rem;
   margin-top: 1rem;
@@ -447,9 +500,11 @@ PLAN SECTION
   width: 50%;
   align-self: center;
 }
+
 .plan__description {
   padding: 0 1rem;
 }
+
 .plan_list {
   width: 75%;
   height: 50%;
@@ -457,45 +512,58 @@ PLAN SECTION
   margin: 0 auto;
   text-align: left;
 }
+
 .plan__cartbtn {
   margin: 1rem;
   background-color: palevioletred;
   color: white;
   border: none;
 }
+
 .plan__title--lite {
   color: palevioletred;
 }
+
 .plan__subtitle--lite {
   color: palevioletred;
 }
+
 .plan__price--lite {
   background-color: palevioletred;
 }
+
 .plan__cartbtn--lite {
   background-color: palevioletred;
 }
+
 .plan__title--pro {
   color: rgb(255, 97, 70);
 }
+
 .plan__subtitle--pro {
   color: rgb(255, 97, 70);
 }
+
 .plan__price--pro {
   background-color: rgb(255, 97, 70);
 }
+
 .plan__cartbtn--pro {
   background-color: rgb(255, 97, 70);
 }
+
 .plan__title--team {
   color: #632780;
 }
+
 .plan__subtitle--team {
   color: #632780;
 }
+
 .plan__price--team {
   background-color: #632780;
 }
+
 .plan__cartbtn--team {
   background-color: #632780;
 }
@@ -504,7 +572,6 @@ PLAN SECTION
 MEDIA QUERY
 **********************************************/
 @media (min-width: 45rem) {
-
   .footer__content {
     justify-content: space-between;
   }
@@ -519,6 +586,7 @@ MEDIA QUERY
   .overview__content {
     clip-path: circle(80% at 20% 10%);
   }
+
   .overview__article {
     font-size: 1.2em;
     max-width: 45rem;
@@ -530,6 +598,7 @@ MEDIA QUERY
     font-size: 1.2em;
     margin: 0 auto;
   }
+
   .clients .section-title {
     max-width: 50rem;
     margin: 2rem auto;
@@ -539,6 +608,7 @@ MEDIA QUERY
     max-width: 70rem;
     margin: 2rem auto;
   }
+
   .wrapper-brands__item {
     height: 4rem;
   }
@@ -546,6 +616,7 @@ MEDIA QUERY
   .product__content {
     justify-content: space-between;
   }
+  
   .product__article {
     font-size: 1.2em;
     text-align: left;
@@ -557,6 +628,7 @@ MEDIA QUERY
   .community {
     font-size: 1.2em;
   }
+  
   .community article {
     margin: 1rem auto;
     max-width: 50rem;
